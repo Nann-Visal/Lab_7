@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0 auto;
+            box-sizing: border-box;
+            
+        }
+        body{
+            background-color: #ECF0EF;
+        }
+
+        .container {
+            background-color: rgb(255, 255, 255);
+            width: 300px;
+            height: 390px;
+            z-index: 999;
+            margin-top: 50px;
+            border-radius: 1%;
+            
+        }
+
+        .container .head {
+            background-color: rgb(57, 58, 58);
+            color: white;
+            height: 40px;
+            border-radius: 2% 2% 0% 0%;
+        }
+
+        .head h2 {
+            text-align: center;
+            padding-top: 2%;
+        }
+
+        h5 {
+            text-align: center;
+            padding: 20px 0px;
+        }
+
+        .username {
+            padding-bottom: 3%;
+            text-align: center;
+        }
+
+        .username input[type="Email"] {
+            padding: 5px;
+            position: relative;
+            border-radius: 2px;
+            border: 1px solid #ECF0EF;
+            
+            height: 35px;
+            width: 270px;
+            padding-left: 10px;
+        }
+
+        .username i {
+            position: absolute;
+            z-index: 9999;
+            height: 10px;
+            padding-left: 245px;
+            line-height: 2;
+        }
+
+        .password{
+            text-align: center;
+        }
+
+        .password input[type="password"] {
+            padding: 5px;
+            position: relative;
+            border-radius: 2px;
+            border: 1px solid #ECF0EF;
+            width: 270px;
+            height: 30px;
+            padding-left: 10px;
+
+
+        }
+        .password input::after {
+            content: '<i class="fa fa-envelope icon"> ';
+        }
+
+        .password i {
+            position: absolute;
+            z-index: 9999;
+            height: 10px;
+            padding-left: 245px;
+            line-height: 2;
+        }
+        .field{
+            display: flex;
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+        .field a{
+            font-size: 14px;
+            padding-right: 9%;
+            text-decoration: none;
+        }
+        .field input[type="checkbox"]{
+            margin-right: 2%;
+        }
+        .bt{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .bt input{
+            margin-top: 5px;
+            margin-bottom: 40px;
+            height: 35px;
+            width: 270px;
+            border: none;
+            border-radius: 5%;
+        }
+        .bt input[type="login"]{
+            text-align: center;
+            background-color: rgba(109, 109, 250, 0.901);
+            color: white;
+            border: none;
+            border-radius: 5%;
+        }
+        .bt h3{
+            font-weight: 100;
+            margin-bottom: 3%;
+        }
+        footer{
+            text-align: center;
+        }
+        footer h5{
+            margin-bottom: 6%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <h2><i class="fab fa-angellist"></i>Anglelist</h2>
+        </div>
+        <h5>SING IN TO CONTINUE.</h2>
+            <form action="#">
+                <div class="username">
+                    <i class="fa fa-envelope icon"></i>
+                    <input type="email" placeholder="Enter email">
+                </div>
+                <div class="password">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="field">
+                    <input type="checkbox" name="" id="">Remember <Menu></Menu>
+                    <a href="$">Forgot you password?</a>
+                </div>
+                <div class="bt">
+                    <input type="login" name="" id="" value="Login">
+                    <h3>Need to Signup?</h3>
+                    <input type="button" name="" id="button" value="Register Now">
+                </div>
+                <footer>
+                    <h6>© 2021- Angle</h6>
+                    <h5>Bootstrap Admin Template</h5>
+                </footer>
+            </form>
+    </div>
+</body>
+
+</html>
